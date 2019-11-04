@@ -1,0 +1,21 @@
+# Create Trinotate sqlite database
+
+/Users/davidgold/Documents/bioinformatics/Trinotate-Trinotate-v3.2.0/admin/Build_Trinotate_Boilerplate_SQLite_db.pl  Trinotate_Foram
+
+# Load initial data
+
+Trinotate Trinotate_Foram.sqlite init \
+--gene_trans_map ../1_Trinity/Uri_Abdu_trinity.map \
+--transcript_fasta ../1_Trinity/Uri_Abdu_trinity.Trinity.fasta \
+--transdecoder_pep ../1_Trinity/Uri_Abdu_trinity.Trinity.fasta.transdecoder.pep
+
+# Add BLAST/hmm data
+
+Trinotate Trinotate_Foram.sqlite LOAD_swissprot_blastp Foram.blastp.outfmt6
+Trinotate Trinotate_Foram.sqlite LOAD_pfam Foram.TrinotatePFAM.out
+Trinotate Trinotate_Foram.sqlite LOAD_swissprot_blastx Foram.blastx.outfmt6
+
+
+Trinotate Trinotate_Foram.sqlite report > Foram.report.8-18-19.txt
+
+mv Foram.report.8-18-19.txt  ~/Desktop/19_Forams/2_Trinotate

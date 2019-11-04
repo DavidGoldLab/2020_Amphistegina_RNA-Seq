@@ -1,0 +1,154 @@
+# Note: file 'DESeq2.33627.dir/diffExpr.P0.001_C2.matrix.RData' was too large to store on Github
+# the file was therefore split using "split -b 50000000 diffExpr.P0.001_C2.matrix.RData"
+# to restore file, use command "cat x* > diffExpr.P0.001_C2.matrix.RData"
+
+################################################
+# Build Transcript and Gene Expression Matrices
+################################################
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec/util/abundance_estimates_to_matrix.pl \
+--est_method RSEM \
+--gene_trans_map gene_trans_map.txt \
+../1_RSEM/A_Low_1.isoforms.results \
+../1_RSEM/B_Low_2.isoforms.results \
+../1_RSEM/C_Low_3.isoforms.results \
+../1_RSEM/D_Reg_1.isoforms.results \
+../1_RSEM/E_Reg_2.isoforms.results \
+../1_RSEM/F_Reg_3.isoforms.results \
+../1_RSEM/G_High_1.isoforms.results \
+../1_RSEM/H_High_2.isoforms.results \
+../1_RSEM/I_High_3.isoforms.results
+
+###########################################
+# Running Differential Expression Analysis
+###########################################
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/run_DE_analysis.pl \
+--matrix RSEM.gene.counts.matrix \
+--method DESeq2 \
+--samples_file samples_file.txt
+
+##############################################
+# Extract GO assignments per gene and lengths
+##############################################
+
+/Users/davidgold/Documents/bioinformatics/Trinotate-Trinotate-v3.2.0/util/extract_GO_assignments_from_Trinotate_xls.pl \
+--Trinotate_xls ../2_Trinotate/Foram.report.8-18-19.txt \
+-G --include_ancestral_terms \
+> go_annotations.txt
+
+# manually create 'Trinity.isoform_lengths.txt' 
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec//util/misc/TPM_weighted_gene_length.py  \
+--gene_trans_map gene_trans_map.txt \
+--trans_lengths Trinity.isoform_lengths.txt \
+--TPM_matrix RSEM.isoform.TPM.not_cross_norm > Trinity.gene_lengths.txt
+
+
+###########################################################
+# Extract and cluster differentially expressed transcripts
+###########################################################
+
+cd DESeq2.33627.dir
+/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
+--matrix ../RSEM.gene.TMM.EXPR.matrix \
+--samples ../samples_file.txt \
+--examine_GO_enrichment --GO_annots ../go_annotations.txt --gene_lengths ../Trinity.gene_lengths.txt
+
+##########################
+# GO-Seq (All conditions)
+##########################
+
+mkdir GoSeq_All
+cd GoSeq_All
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec//Analysis/DifferentialExpression/run_GOseq.pl \
+--genes_single_factor  ../GoSeq_List.DE.txt \
+--GO_assignments ../go_annotations.txt \
+--lengths ../Trinity.gene_lengths.txt \
+--background  ../GoSeq_List.All.txt
+
+#################################################
+# Focus on DE genes expressed in "High" condition
+#################################################
+
+# Combine RSEM.gene.counts.matrix.High_vs_Reg.DESeq2.DE_results.P0.001_C2.DE.subset and RSEM.gene.counts.matrix.High_vs_Low.DESeq2.DE_results.P0.001_C2.DE.subset into one dataset
+	# GoSeq_List.HighDE.txt
+
+mkdir GoSeq_High_All
+cd GoSeq_High_All
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec//Analysis/DifferentialExpression/run_GOseq.pl \
+--genes_single_factor  ../GoSeq_List.HighDE.txt \
+--GO_assignments ../go_annotations.txt \
+--lengths ../Trinity.gene_lengths.txt \
+--background  ../GoSeq_List.DE.txt
+	
+# Combine RSEM.gene.counts.matrix.High_vs_Reg.DESeq2.DE_results.P0.001_C2.High-UP.subset and RSEM.gene.counts.matrix.High_vs_Low.DESeq2.DE_results.P0.001_C2.High-UP.subset
+	# GoSeq_List.HighDE.UP.txt
+
+mkdir GoSeq_High_Up
+cd GoSeq_High_Up
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec//Analysis/DifferentialExpression/run_GOseq.pl \
+--genes_single_factor  ../GoSeq_List.HighDE.UP.txt \
+--GO_assignments ../go_annotations.txt \
+--lengths ../Trinity.gene_lengths.txt \
+--background  ../GoSeq_List.DE.txt
+
+# Create KEGG versions of go_annotations.txt using KO assignments from trinotate
+	# GoSeq_KEGG_List.sorted.txt
+# Convert KEGG IDs to "higher" KEGG IDs using KEGG mapper
+	# GoSeq_KEGG_List.Kegg_Top_IDs.sorted.txt
+
+mkdir GoSeq_KEGG_All
+cd GoSeq_High_All
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec//Analysis/DifferentialExpression/run_GOseq.pl \
+--genes_single_factor  ../GoSeq_List.HighDE.txt \
+--GO_assignments ../GoSeq_KEGG_List.MapIDs.sorted.txt \
+--lengths ../Trinity.gene_lengths.txt \
+--background  ../GoSeq_List.DE.txt
+
+###########################################
+###########################################
+
+#################
+1) All DE Genes
+#################
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec//Analysis/DifferentialExpression/run_GOseq.pl \
+--genes_single_factor  GoSeq_List.DE_P0.001_C2.txt \
+--GO_assignments go_annotations.txt \
+--lengths Trinity.gene_lengths.txt \
+--background  GoSeq_List.All.txt
+
+####################################################################################################################
+2) High and low DE genes that show the same up- or down- pattern when compared to regular (general stress response)
+####################################################################################################################
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec//Analysis/DifferentialExpression/run_GOseq.pl \
+--genes_single_factor  GoSeq_List.Directional.txt \
+--GO_assignments go_annotations.txt \
+--lengths Trinity.gene_lengths.txt \
+--background  GoSeq_List.DE_P0.001_C2.txt
+
+################################################################################################
+3) High-temperature DE genes minus DE genes that show up between low and normal (heat response)
+################################################################################################
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec//Analysis/DifferentialExpression/run_GOseq.pl \
+--genes_single_factor  GoSeq_List.High_vs_Reg_minus_Low_vs_Reg.txt \
+--GO_assignments go_annotations.txt \
+--lengths Trinity.gene_lengths.txt \
+--background  GoSeq_List.DE_P0.001_C2.txt
+
+################################################################################################
+4) Low-temperature DE genes minus DE genes that show up between heat and normal (cold response)
+################################################################################################
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec//Analysis/DifferentialExpression/run_GOseq.pl \
+--genes_single_factor  GoSeq_List.Low_vs_Reg_minus_High_vs_Reg.txt \
+--GO_assignments go_annotations.txt \
+--lengths Trinity.gene_lengths.txt \
+--background  GoSeq_List.DE_P0.001_C2.txt
