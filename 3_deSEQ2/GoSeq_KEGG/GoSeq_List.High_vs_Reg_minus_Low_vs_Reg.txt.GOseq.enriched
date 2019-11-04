@@ -1,0 +1,2 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	over_represented_FDR	go_term	gene_ids
+ko05168"Herpes_simplex_virus_1_infection"	0.00950657476530689	0.997588186942094	8	23	0.9999999999	none	TRINITY_DN11282_c0_g1, TRINITY_DN31935_c0_g3, TRINITY_DN32994_c0_g1, TRINITY_DN37179_c0_g1, TRINITY_DN51758_c0_g1, TRINITY_DN52836_c0_g1, TRINITY_DN57013_c0_g1, TRINITY_DN8057_c0_g1

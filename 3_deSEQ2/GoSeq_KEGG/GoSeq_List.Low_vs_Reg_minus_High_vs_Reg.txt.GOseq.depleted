@@ -1,0 +1,6 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	over_represented_FDR	under_represented_FDR	go_term
+ko05034"Alcoholism"	0.995672195099101	0.0211361428811845	3	13	0.9999999999	0.9999999999	none
+ko05322"Systemic_lupus_erythematosus"	0.997631623028242	0.0237872617048752	1	8	0.9999999999	0.9999999999	none
+ko04924"Renin_secretion"	1	0.0409394106842615	0	4	0.9999999999	0.9999999999	none
+ko04713"Circadian_entrainment"	1	0.0496073763121601	0	4	0.9999999999	0.9999999999	none
+ko00740"Riboflavin_metabolism"	1	0.0498617706899304	0	3	0.9999999999	0.9999999999	none
