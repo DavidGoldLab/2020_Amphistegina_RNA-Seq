@@ -1,0 +1,27 @@
+# Sample_A
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output A_ATCACG_L001_R1_001.fastq.gz,A_ATCACG_L001_R1_002.fastq.gz Uri_Abdu_trinity A_Low_1
+
+# Sample_B
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output B_CGATGT_L001_R1_001.fastq.gz,B_CGATGT_L001_R1_002.fastq.gz Uri_Abdu_trinity B_Low_2
+
+# Sample_C
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output C_TTAGGC_L001_R1_001.fastq.gz,C_TTAGGC_L001_R1_002.fastq.gz Uri_Abdu_trinity C_Low_3
+
+# Sample_D
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output D_TGACCA_L001_R1_001.fastq.gz,D_TGACCA_L001_R1_002.fastq.gz Uri_Abdu_trinity D_Reg_1
+
+# Sample_E
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output E_ACAGTG_L001_R1_001.fastq.gz,E_ACAGTG_L001_R1_002.fastq.gz Uri_Abdu_trinity E_Reg_2
+
+# Sample_F
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output F_GCCAAT_L001_R1_001.fastq.gz,F_GCCAAT_L001_R1_002.fastq.gz Uri_Abdu_trinity F_Reg_3
+
+#Sample_J
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output G_CAGATC_L001_R1_001.fastq.gz,G_CAGATC_L001_R1_002.fastq.gz Uri_Abdu_trinity G_High_1
+
+# Sample_H
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output H_ACTTGA_L001_R1_001.fastq.gz,H_ACTTGA_L001_R1_002.fastq.gz Uri_Abdu_trinity H_High_2
+
+# Sample_I
+rsem-calculate-expression --bowtie2 -p 8 --no-bam-output I_GATCAG_L001_R1_001.fastq.gz,I_GATCAG_L001_R1_002.fastq.gz Uri_Abdu_trinity I_High_3
+
