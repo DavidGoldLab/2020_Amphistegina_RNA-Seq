@@ -1,0 +1,121 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	under_represented_FDR	go_term
+GO:0005929	0.999999948821587	4.29184367689598e-07	5	33	cilium	CC	0.9999999999	0.00356094269872059	CC cilium
+GO:0006928	0.999999262073227	2.80769501260149e-06	16	59	movement of cell or subcellular component	BP	0.9999999999	0.0108912087678875	BP movement of cell or subcellular component
+GO:0003341	1	4.40796184997251e-06	0	15	cilium movement	BP	0.9999999999	0.0108912087678875	BP cilium movement
+GO:0031514	1	5.25067314349162e-06	0	15	motile cilium	CC	0.9999999999	0.0108912087678875	CC motile cilium
+GO:0030031	0.999999057530737	6.87510161071301e-06	5	29	cell projection assembly	BP	0.9999999999	0.0114085436128172	BP cell projection assembly
+GO:0044430	0.999995992952823	1.02072111572483e-05	36	100	cytoskeletal part	CC	0.9999999999	0.0141148718286148	CC cytoskeletal part
+GO:0070286	0.999999329510575	1.60704678968315e-05	1	16	axonemal dynein complex assembly	BP	0.9999999999	0.0190480960200016	BP axonemal dynein complex assembly
+GO:0007018	0.999995861306724	1.83715045900725e-05	10	42	microtubule-based movement	BP	0.9999999999	0.019053546697979	BP microtubule-based movement
+GO:0044447	1	4.12200334799983e-05	0	13	axoneme part	CC	0.9999999999	0.0365691569009584	CC axoneme part
+GO:0044441	0.999991482412747	4.83262213856297e-05	6	30	ciliary part	CC	0.9999999999	0.0365691569009584	CC ciliary part
+GO:0036159	1	4.84826715572547e-05	0	11	inner dynein arm assembly	BP	0.9999999999	0.0365691569009584	BP inner dynein arm assembly
+GO:0044782	0.999985294845173	9.20011697187703e-05	5	25	cilium organization	BP	0.9999999999	0.0587179773197413	BP cilium organization
+GO:0060271	0.999985294845173	9.20011697187703e-05	5	25	cilium assembly	BP	0.9999999999	0.0587179773197413	BP cilium assembly
+GO:0030286	0.999975761464662	0.000195610390855948	3	20	dynein complex	CC	0.9999999999	0.1159271009237	CC dynein complex
+GO:0005730	0.999835352070004	0.000394117659419353	29	75	nucleolus	CC	0.9999999999	0.213569385427732	CC nucleolus
+GO:0007017	0.99984078211648	0.000424833315022998	21	60	microtubule-based process	BP	0.9999999999	0.213569385427732	BP microtubule-based process
+GO:0005858	1	0.000437589436214469	0	10	axonemal dynein complex	CC	0.9999999999	0.213569385427732	CC axonemal dynein complex
+GO:0009765	0.999960137759231	0.000703978170354043	1	11	photosynthesis, light harvesting	BP	0.9999999999	0.324494826634861	BP photosynthesis, light harvesting
+GO:0048870	0.999862824391071	0.000840844344881805	4	19	cell motility	BP	0.9999999999	0.367183448920228	BP cell motility
+GO:0030030	0.999624370081296	0.00102638463817191	18	50	cell projection organization	BP	0.9999999999	0.425795667145617	BP cell projection organization
+GO:0005815	0.99961955956122	0.00114168382066342	14	42	microtubule organizing center	CC	0.9999999999	0.451073840954493	CC microtubule organizing center
+GO:0036064	0.999925731370673	0.00119845112283905	1	11	ciliary basal body	CC	0.9999999999	0.451979498463435	CC ciliary basal body
+GO:0005875	0.999600535919627	0.00151647603498643	8	29	microtubule associated complex	CC	0.9999999999	0.547052246186193	CC microtubule associated complex
+GO:0036158	1	0.00188672588935393	0	7	outer dynein arm assembly	BP	0.9999999999	0.644649820870941	BP outer dynein arm assembly
+GO:0036156	1	0.00194241840686676	0	8	inner dynein arm	CC	0.9999999999	0.644649820870941	CC inner dynein arm
+GO:0015081	1	0.00202558271413567	0	7	sodium ion transmembrane transporter activity	MF	0.9999999999	0.646394606891678	MF sodium ion transmembrane transporter activity
+GO:0005813	0.999082671993137	0.00289076915163578	11	33	centrosome	CC	0.9999999999	0.888322653745263	CC centrosome
+GO:0044450	0.999435966103627	0.00355215107463991	3	15	microtubule organizing center part	CC	0.9999999999	0.9999999999	CC microtubule organizing center part
+GO:0043228	0.997516008911013	0.00361301386062783	141	279	non-membrane-bounded organelle	CC	0.9999999999	0.9999999999	CC non-membrane-bounded organelle
+GO:0070925	0.998361074453662	0.00384876980349184	21	54	organelle assembly	BP	0.9999999999	0.9999999999	BP organelle assembly
+GO:0044463	0.998176432688019	0.00401774876375674	25	62	cell projection part	CC	0.9999999999	0.9999999999	CC cell projection part
+GO:0030684	0.99933651444492	0.00408533445137676	3	15	preribosome	CC	0.9999999999	0.9999999999	CC preribosome
+GO:0042995	0.998006859397758	0.00423480541518474	28	67	cell projection	CC	0.9999999999	0.9999999999	CC cell projection
+GO:0043232	0.996847802327304	0.00454788648925436	141	278	intracellular non-membrane-bounded organelle	CC	0.9999999999	0.9999999999	CC intracellular non-membrane-bounded organelle
+GO:0003777	0.998601825719101	0.00479674610131514	8	27	microtubule motor activity	MF	0.9999999999	0.9999999999	MF microtubule motor activity
+GO:0044459	0.997741525531629	0.00498614895046127	24	59	plasma membrane part	CC	0.9999999999	0.9999999999	CC plasma membrane part
+GO:0060294	1	0.00513496526670536	0	7	cilium movement involved in cell motility	BP	0.9999999999	0.9999999999	BP cilium movement involved in cell motility
+GO:0046873	0.999318430979786	0.00535811538602011	2	12	metal ion transmembrane transporter activity	MF	0.9999999999	0.9999999999	MF metal ion transmembrane transporter activity
+GO:0099513	0.997911484674959	0.00538039251766398	15	42	polymeric cytoskeletal fiber	CC	0.9999999999	0.9999999999	CC polymeric cytoskeletal fiber
+GO:0003774	0.998149677077483	0.00564275481533787	10	31	motor activity	MF	0.9999999999	0.9999999999	MF motor activity
+GO:0120025	0.997129440523746	0.00596777044677091	28	66	plasma membrane bounded cell projection	CC	0.9999999999	0.9999999999	CC plasma membrane bounded cell projection
+GO:0040011	0.997584726321966	0.00684693296051048	12	33	locomotion	BP	0.9999999999	0.9999999999	BP locomotion
+GO:0098797	0.999476152164439	0.0071167051556809	1	8	plasma membrane protein complex	CC	0.9999999999	0.9999999999	CC plasma membrane protein complex
+GO:0042126	1	0.00781642925167874	0	5	nitrate metabolic process	BP	0.9999999999	0.9999999999	BP nitrate metabolic process
+GO:0042128	1	0.00781642925167874	0	5	nitrate assimilation	BP	0.9999999999	0.9999999999	BP nitrate assimilation
+GO:0099080	0.996785855689387	0.00785071851573626	16	43	supramolecular complex	CC	0.9999999999	0.9999999999	CC supramolecular complex
+GO:0099081	0.996785855689387	0.00785071851573626	16	43	supramolecular polymer	CC	0.9999999999	0.9999999999	CC supramolecular polymer
+GO:0099512	0.996785855689387	0.00785071851573626	16	43	supramolecular fiber	CC	0.9999999999	0.9999999999	CC supramolecular fiber
+GO:0046649	0.999397456146112	0.0079704885710569	1	8	lymphocyte activation	BP	0.9999999999	0.9999999999	BP lymphocyte activation
+GO:0005874	0.996477127530095	0.0087159504150706	15	41	microtubule	CC	0.9999999999	0.9999999999	CC microtubule
+GO:0030076	1	0.00873764491236775	0	5	light-harvesting complex	CC	0.9999999999	0.9999999999	CC light-harvesting complex
+GO:0035082	1	0.0109153531200038	0	5	axoneme assembly	BP	0.9999999999	0.9999999999	BP axoneme assembly
+GO:0097435	0.996767675171033	0.0118606851016089	6	20	supramolecular fiber organization	BP	0.9999999999	0.9999999999	BP supramolecular fiber organization
+GO:0097730	1	0.0124496471896924	0	5	non-motile cilium	CC	0.9999999999	0.9999999999	CC non-motile cilium
+GO:0045505	0.998138493961399	0.0128539068009693	2	11	dynein intermediate chain binding	MF	0.9999999999	0.9999999999	MF dynein intermediate chain binding
+GO:0042110	1	0.0133767292750895	0	5	T cell activation	BP	0.9999999999	0.9999999999	BP T cell activation
+GO:1905515	0.99884603940908	0.0134417502151479	1	8	non-motile cilium assembly	BP	0.9999999999	0.9999999999	BP non-motile cilium assembly
+GO:0071941	0.998848557853348	0.0142988313623956	1	7	nitrogen cycle metabolic process	BP	0.9999999999	0.9999999999	BP nitrogen cycle metabolic process
+GO:0032040	0.998622943295288	0.0154786950446674	1	8	small-subunit processome	CC	0.9999999999	0.9999999999	CC small-subunit processome
+GO:0005887	0.99606255079762	0.0155298924832224	5	17	integral component of plasma membrane	CC	0.9999999999	0.9999999999	CC integral component of plasma membrane
+GO:0031226	0.99606255079762	0.0155298924832224	5	17	intrinsic component of plasma membrane	CC	0.9999999999	0.9999999999	CC intrinsic component of plasma membrane
+GO:0009737	0.996237180803302	0.0194590050604006	3	12	response to abscisic acid	BP	0.9999999999	0.9999999999	BP response to abscisic acid
+GO:0015294	1	0.0196105605560939	0	5	solute:cation symporter activity	MF	0.9999999999	0.9999999999	MF solute:cation symporter activity
+GO:0009744	1	0.0202037280970767	0	5	response to sucrose	BP	0.9999999999	0.9999999999	BP response to sucrose
+GO:0034285	1	0.0202037280970767	0	5	response to disaccharide	BP	0.9999999999	0.9999999999	BP response to disaccharide
+GO:0000981	0.99522232329141	0.0207470019357612	4	14	DNA-binding transcription factor activity, RNA polymerase II-specific	MF	0.9999999999	0.9999999999	MF DNA-binding transcription factor activity, RNA polymerase II-specific
+GO:0060170	1	0.0225006941280696	0	5	ciliary membrane	CC	0.9999999999	0.9999999999	CC ciliary membrane
+GO:0002200	1	0.0234106181362379	0	4	somatic diversification of immune receptors	BP	0.9999999999	0.9999999999	BP somatic diversification of immune receptors
+GO:0002204	1	0.0234106181362379	0	4	somatic recombination of immunoglobulin genes involved in immune response	BP	0.9999999999	0.9999999999	BP somatic recombination of immunoglobulin genes involved in immune response
+GO:0002208	1	0.0234106181362379	0	4	somatic diversification of immunoglobulins involved in immune response	BP	0.9999999999	0.9999999999	BP somatic diversification of immunoglobulins involved in immune response
+GO:0002285	1	0.0234106181362379	0	4	lymphocyte activation involved in immune response	BP	0.9999999999	0.9999999999	BP lymphocyte activation involved in immune response
+GO:0002312	1	0.0234106181362379	0	4	B cell activation involved in immune response	BP	0.9999999999	0.9999999999	BP B cell activation involved in immune response
+GO:0002562	1	0.0234106181362379	0	4	somatic diversification of immune receptors via germline recombination within a single locus	BP	0.9999999999	0.9999999999	BP somatic diversification of immune receptors via germline recombination within a single locus
+GO:0016444	1	0.0234106181362379	0	4	somatic cell DNA recombination	BP	0.9999999999	0.9999999999	BP somatic cell DNA recombination
+GO:0016445	1	0.0234106181362379	0	4	somatic diversification of immunoglobulins	BP	0.9999999999	0.9999999999	BP somatic diversification of immunoglobulins
+GO:0016447	1	0.0234106181362379	0	4	somatic recombination of immunoglobulin gene segments	BP	0.9999999999	0.9999999999	BP somatic recombination of immunoglobulin gene segments
+GO:0042113	1	0.0234106181362379	0	4	B cell activation	BP	0.9999999999	0.9999999999	BP B cell activation
+GO:0045190	1	0.0234106181362379	0	4	isotype switching	BP	0.9999999999	0.9999999999	BP isotype switching
+GO:0071804	1	0.023604934472594	0	4	cellular potassium ion transport	BP	0.9999999999	0.9999999999	BP cellular potassium ion transport
+GO:0071805	1	0.023604934472594	0	4	potassium ion transmembrane transport	BP	0.9999999999	0.9999999999	BP potassium ion transmembrane transport
+GO:0035869	1	0.0239825141844379	0	5	ciliary transition zone	CC	0.9999999999	0.9999999999	CC ciliary transition zone
+GO:0044458	1	0.0242088424336224	0	4	motile cilium assembly	BP	0.9999999999	0.9999999999	BP motile cilium assembly
+GO:0035264	0.995972008568988	0.0250761298904316	2	10	multicellular organism growth	BP	0.9999999999	0.9999999999	BP multicellular organism growth
+GO:0007600	0.992405649318312	0.0257230783887964	6	18	sensory perception	BP	0.9999999999	0.9999999999	BP sensory perception
+GO:0045321	0.994352454331855	0.0282038107589178	3	11	leukocyte activation	BP	0.9999999999	0.9999999999	BP leukocyte activation
+GO:0045503	0.995223082223916	0.028760272474615	2	10	dynein light chain binding	MF	0.9999999999	0.9999999999	MF dynein light chain binding
+GO:0051959	0.995223082223916	0.028760272474615	2	10	dynein light intermediate chain binding	MF	0.9999999999	0.9999999999	MF dynein light intermediate chain binding
+GO:0044306	1	0.0291417327249901	0	4	neuron projection terminus	CC	0.9999999999	0.9999999999	CC neuron projection terminus
+GO:0030992	1	0.0294424903074001	0	4	intraciliary transport particle B	CC	0.9999999999	0.9999999999	CC intraciliary transport particle B
+GO:0035735	1	0.0294424903074001	0	4	intraciliary transport involved in cilium assembly	BP	0.9999999999	0.9999999999	BP intraciliary transport involved in cilium assembly
+GO:0042073	1	0.0294424903074001	0	4	intraciliary transport	BP	0.9999999999	0.9999999999	BP intraciliary transport
+GO:0098840	1	0.0294424903074001	0	4	protein transport along microtubule	BP	0.9999999999	0.9999999999	BP protein transport along microtubule
+GO:0099118	1	0.0294424903074001	0	4	microtubule-based protein transport	BP	0.9999999999	0.9999999999	BP microtubule-based protein transport
+GO:0006364	0.986173870476965	0.029521478251408	17	41	rRNA processing	BP	0.9999999999	0.9999999999	BP rRNA processing
+GO:2001057	0.997342585591285	0.0295822003122584	1	6	reactive nitrogen species metabolic process	BP	0.9999999999	0.9999999999	BP reactive nitrogen species metabolic process
+GO:0015293	0.996943838703167	0.0306189668604553	1	7	symporter activity	MF	0.9999999999	0.9999999999	MF symporter activity
+GO:0030687	1	0.0306790497969856	0	4	preribosome, large subunit precursor	CC	0.9999999999	0.9999999999	CC preribosome, large subunit precursor
+GO:0010150	1	0.0330689875991402	0	4	leaf senescence	BP	0.9999999999	0.9999999999	BP leaf senescence
+GO:0090693	1	0.0330689875991402	0	4	plant organ senescence	BP	0.9999999999	0.9999999999	BP plant organ senescence
+GO:0005732	1	0.0338596441885667	0	4	small nucleolar ribonucleoprotein complex	CC	0.9999999999	0.9999999999	CC small nucleolar ribonucleoprotein complex
+GO:0048666	1	0.0338779065045344	0	4	neuron development	BP	0.9999999999	0.9999999999	BP neuron development
+GO:0006607	1	0.0346013573409746	0	4	NLS-bearing protein import into nucleus	BP	0.9999999999	0.9999999999	BP NLS-bearing protein import into nucleus
+GO:0001775	0.991079050897377	0.0358856605279602	4	13	cell activation	BP	0.9999999999	0.9999999999	BP cell activation
+GO:0016477	0.990984107113892	0.0361974614982491	4	13	cell migration	BP	0.9999999999	0.9999999999	BP cell migration
+GO:1990939	0.991913894295494	0.0363798999481905	3	12	ATP-dependent microtubule motor activity	MF	0.9999999999	0.9999999999	MF ATP-dependent microtubule motor activity
+GO:0005814	0.991827143933712	0.0380019522750198	3	11	centriole	CC	0.9999999999	0.9999999999	CC centriole
+GO:0048145	0.996175731284986	0.0389374057579128	1	6	regulation of fibroblast proliferation	BP	0.9999999999	0.9999999999	BP regulation of fibroblast proliferation
+GO:0008154	1	0.039466292230499	0	4	actin polymerization or depolymerization	BP	0.9999999999	0.9999999999	BP actin polymerization or depolymerization
+GO:0097305	0.987186358327542	0.0399706362188739	6	18	response to alcohol	BP	0.9999999999	0.9999999999	BP response to alcohol
+GO:0072350	0.989775729858846	0.0401097492440535	4	13	tricarboxylic acid metabolic process	BP	0.9999999999	0.9999999999	BP tricarboxylic acid metabolic process
+GO:0051606	0.99114828782018	0.0405156464434413	3	11	detection of stimulus	BP	0.9999999999	0.9999999999	BP detection of stimulus
+GO:0001578	0.995946546231639	0.0406763877233359	1	6	microtubule bundle formation	BP	0.9999999999	0.9999999999	BP microtubule bundle formation
+GO:0034464	1	0.0415711895892669	0	4	BBSome	CC	0.9999999999	0.9999999999	CC BBSome
+GO:0022890	0.983578215270695	0.0416537322933518	10	25	inorganic cation transmembrane transporter activity	MF	0.9999999999	0.9999999999	MF inorganic cation transmembrane transporter activity
+GO:0050877	0.98330500699905	0.0422475235772882	10	25	nervous system process	BP	0.9999999999	0.9999999999	BP nervous system process
+GO:0015296	1	0.0441134845506243	0	4	anion:cation symporter activity	MF	0.9999999999	0.9999999999	MF anion:cation symporter activity
+GO:0016072	0.977512609224373	0.0443851157748885	19	44	rRNA metabolic process	BP	0.9999999999	0.9999999999	BP rRNA metabolic process
+GO:0031122	0.991901333497712	0.0455633160418249	2	9	cytoplasmic microtubule organization	BP	0.9999999999	0.9999999999	BP cytoplasmic microtubule organization
+GO:0005261	1	0.0460453807061026	0	3	cation channel activity	MF	0.9999999999	0.9999999999	MF cation channel activity
+GO:0015079	1	0.0460453807061026	0	3	potassium ion transmembrane transporter activity	MF	0.9999999999	0.9999999999	MF potassium ion transmembrane transporter activity

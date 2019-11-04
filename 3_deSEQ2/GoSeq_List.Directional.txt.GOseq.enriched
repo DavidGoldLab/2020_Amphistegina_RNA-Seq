@@ -1,0 +1,114 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	go_term	gene_ids
+GO:0008610	1.95845275863169e-06	0.999999695477979	13	90	lipid biosynthetic process	BP	0.0162492825383672	BP lipid biosynthetic process	TRINITY_DN11283_c0_g1, TRINITY_DN17183_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1, TRINITY_DN28300_c0_g1, TRINITY_DN28691_c0_g1, TRINITY_DN29047_c0_g1, TRINITY_DN35053_c0_g1, TRINITY_DN37434_c0_g1, TRINITY_DN38150_c0_g1, TRINITY_DN50783_c0_g1, TRINITY_DN5632_c0_g1, TRINITY_DN8498_c0_g1
+GO:0006629	8.27782444028787e-06	0.999998273355	15	134	lipid metabolic process	BP	0.0343405546905342	BP lipid metabolic process	TRINITY_DN11283_c0_g1, TRINITY_DN17183_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1, TRINITY_DN28300_c0_g1, TRINITY_DN28691_c0_g1, TRINITY_DN29047_c0_g1, TRINITY_DN30444_c0_g1, TRINITY_DN35053_c0_g1, TRINITY_DN37434_c0_g1, TRINITY_DN38150_c0_g1, TRINITY_DN50783_c0_g1, TRINITY_DN5632_c0_g1, TRINITY_DN57643_c0_g1, TRINITY_DN8498_c0_g1
+GO:0044255	2.77341980630837e-05	0.999994348302341	13	114	cellular lipid metabolic process	BP	0.0767035471098018	BP cellular lipid metabolic process	TRINITY_DN11283_c0_g1, TRINITY_DN17183_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1, TRINITY_DN28691_c0_g1, TRINITY_DN29047_c0_g1, TRINITY_DN30444_c0_g1, TRINITY_DN35053_c0_g1, TRINITY_DN37434_c0_g1, TRINITY_DN38150_c0_g1, TRINITY_DN50783_c0_g1, TRINITY_DN57643_c0_g1, TRINITY_DN8498_c0_g1
+GO:0031969	5.07325485850713e-05	0.999997517305918	5	15	chloroplast membrane	CC	0.105231988902584	CC chloroplast membrane	TRINITY_DN11283_c0_g1, TRINITY_DN17183_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1, TRINITY_DN34897_c0_g1
+GO:0042170	9.96143048299892e-05	0.999994157425853	5	17	plastid membrane	CC	0.165299977434884	CC plastid membrane	TRINITY_DN11283_c0_g1, TRINITY_DN17183_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1, TRINITY_DN34897_c0_g1
+GO:1901136	0.00024372098704891	0.999996378608557	3	5	carbohydrate derivative catabolic process	BP	0.337025504924134	BP carbohydrate derivative catabolic process	TRINITY_DN25769_c0_g1, TRINITY_DN30444_c0_g1, TRINITY_DN38745_c0_g1
+GO:0044711	0.000571060514964772	0.999806426263499	17	236	NA	NA	0.676869870380387	none	TRINITY_DN11283_c0_g1, TRINITY_DN17183_c0_g1, TRINITY_DN19346_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1, TRINITY_DN28300_c0_g1, TRINITY_DN28691_c0_g1, TRINITY_DN29047_c0_g1, TRINITY_DN30444_c0_g1, TRINITY_DN31254_c0_g1, TRINITY_DN34897_c0_g1, TRINITY_DN35053_c0_g1, TRINITY_DN37434_c0_g1, TRINITY_DN38150_c0_g1, TRINITY_DN50783_c0_g1, TRINITY_DN5632_c0_g1, TRINITY_DN8498_c0_g1
+GO:0004310	0.000871381545969054	1	2	2	farnesyl-diphosphate farnesyltransferase activity	MF	0.803316965211693	MF farnesyl-diphosphate farnesyltransferase activity	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0051996	0.000871381545969054	1	2	2	squalene synthase activity	MF	0.803316965211693	MF squalene synthase activity	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0046434	0.00127889663441907	0.999952678552875	3	8	organophosphate catabolic process	BP	0.9999999999	BP organophosphate catabolic process	TRINITY_DN25769_c0_g1, TRINITY_DN30444_c0_g1, TRINITY_DN38745_c0_g1
+GO:1903509	0.00187945305442188	0.999916625084984	3	9	liposaccharide metabolic process	BP	0.9999999999	BP liposaccharide metabolic process	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN38150_c0_g1
+GO:0004311	0.00256254014977633	0.999974491266434	2	3	farnesyltranstransferase activity	MF	0.9999999999	MF farnesyltranstransferase activity	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0019374	0.00256291308608995	0.999974485640718	2	3	galactolipid metabolic process	BP	0.9999999999	BP galactolipid metabolic process	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1
+GO:0006696	0.00256329924974409	0.999974479815019	2	3	ergosterol biosynthetic process	BP	0.9999999999	BP ergosterol biosynthetic process	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0008204	0.00256329924974409	0.999974479815019	2	3	ergosterol metabolic process	BP	0.9999999999	BP ergosterol metabolic process	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0016128	0.00256329924974409	0.999974479815019	2	3	phytosteroid metabolic process	BP	0.9999999999	BP phytosteroid metabolic process	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0016129	0.00256329924974409	0.999974479815019	2	3	phytosteroid biosynthetic process	BP	0.9999999999	BP phytosteroid biosynthetic process	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0044107	0.00256329924974409	0.999974479815019	2	3	cellular alcohol metabolic process	BP	0.9999999999	BP cellular alcohol metabolic process	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0044108	0.00256329924974409	0.999974479815019	2	3	cellular alcohol biosynthetic process	BP	0.9999999999	BP cellular alcohol biosynthetic process	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0097384	0.00256329924974409	0.999974479815019	2	3	cellular lipid biosynthetic process	BP	0.9999999999	BP cellular lipid biosynthetic process	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0046467	0.00262554688469559	0.999864333614702	3	10	membrane lipid biosynthetic process	BP	0.9999999999	BP membrane lipid biosynthetic process	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1
+GO:1901135	0.00267875010712882	0.999306721059647	9	100	carbohydrate derivative metabolic process	BP	0.9999999999	BP carbohydrate derivative metabolic process	TRINITY_DN11283_c0_g1, TRINITY_DN19346_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25769_c0_g1, TRINITY_DN30444_c0_g1, TRINITY_DN31254_c0_g1, TRINITY_DN38150_c0_g1, TRINITY_DN38648_c0_g1, TRINITY_DN38745_c0_g1
+GO:1901137	0.00297895317905615	0.999582493670506	5	34	carbohydrate derivative biosynthetic process	BP	0.9999999999	BP carbohydrate derivative biosynthetic process	TRINITY_DN11283_c0_g1, TRINITY_DN19346_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN38150_c0_g1, TRINITY_DN38648_c0_g1
+GO:1990204	0.00357866814800608	0.999623838840554	4	22	oxidoreductase complex	CC	0.9999999999	CC oxidoreductase complex	TRINITY_DN15041_c0_g1, TRINITY_DN25769_c0_g1, TRINITY_DN30444_c0_g1, TRINITY_DN38388_c0_g1
+GO:0006643	0.00460734907873263	0.999694809579235	3	12	membrane lipid metabolic process	BP	0.9999999999	BP membrane lipid metabolic process	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1
+GO:0006631	0.0049186285773564	0.999030689802613	6	54	fatty acid metabolic process	BP	0.9999999999	BP fatty acid metabolic process	TRINITY_DN20695_c0_g1, TRINITY_DN28691_c0_g1, TRINITY_DN29047_c0_g1, TRINITY_DN37434_c0_g1, TRINITY_DN50783_c0_g1, TRINITY_DN57643_c0_g1
+GO:0008378	0.00502689925090095	0.999900144727745	2	4	galactosyltransferase activity	MF	0.9999999999	MF galactosyltransferase activity	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1
+GO:0035250	0.00502689925090095	0.999900144727745	2	4	UDP-galactosyltransferase activity	MF	0.9999999999	MF UDP-galactosyltransferase activity	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1
+GO:0004659	0.00502693147636594	0.999900143755215	2	4	prenyltransferase activity	MF	0.9999999999	MF prenyltransferase activity	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:1902653	0.00502723929004402	0.999900134465566	2	4	secondary alcohol biosynthetic process	BP	0.9999999999	BP secondary alcohol biosynthetic process	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0004367	0.00502846665128	0.999900097421498	2	4	glycerol-3-phosphate dehydrogenase [NAD+] activity	MF	0.9999999999	MF glycerol-3-phosphate dehydrogenase [NAD+] activity	TRINITY_DN25769_c0_g1, TRINITY_DN30444_c0_g1
+GO:0006072	0.00502846665128	0.999900097421498	2	4	glycerol-3-phosphate metabolic process	BP	0.9999999999	BP glycerol-3-phosphate metabolic process	TRINITY_DN25769_c0_g1, TRINITY_DN30444_c0_g1
+GO:0009331	0.00502846665128	0.999900097421498	2	4	glycerol-3-phosphate dehydrogenase complex	CC	0.9999999999	CC glycerol-3-phosphate dehydrogenase complex	TRINITY_DN25769_c0_g1, TRINITY_DN30444_c0_g1
+GO:0046168	0.00502846665128	0.999900097421498	2	4	glycerol-3-phosphate catabolic process	BP	0.9999999999	BP glycerol-3-phosphate catabolic process	TRINITY_DN25769_c0_g1, TRINITY_DN30444_c0_g1
+GO:0052646	0.00502846665128	0.999900097421498	2	4	alditol phosphate metabolic process	BP	0.9999999999	BP alditol phosphate metabolic process	TRINITY_DN25769_c0_g1, TRINITY_DN30444_c0_g1
+GO:0006694	0.00586440668793317	0.999568908218778	3	13	steroid biosynthetic process	BP	0.9999999999	BP steroid biosynthetic process	TRINITY_DN28300_c0_g1, TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0016765	0.00730179053188929	0.999410482970136	3	14	transferase activity, transferring alkyl or aryl (other than methyl) groups	MF	0.9999999999	MF transferase activity, transferring alkyl or aryl (other than methyl) groups	TRINITY_DN26385_c0_g1, TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0009877	0.00819751594412687	0.99975661596262	2	5	nodulation	BP	0.9999999999	BP nodulation	TRINITY_DN11283_c0_g1, TRINITY_DN47747_c0_g1
+GO:0009527	0.00821440353937734	0.999755851827957	2	5	plastid outer membrane	CC	0.9999999999	CC plastid outer membrane	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1
+GO:0009707	0.00821440353937734	0.999755851827957	2	5	chloroplast outer membrane	CC	0.9999999999	CC chloroplast outer membrane	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1
+GO:0008202	0.0107592741581808	0.998976357411942	3	16	steroid metabolic process	BP	0.9999999999	BP steroid metabolic process	TRINITY_DN28300_c0_g1, TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0006664	0.0120863378012257	0.999522126241931	2	6	glycolipid metabolic process	BP	0.9999999999	BP glycolipid metabolic process	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1
+GO:0009247	0.0120863378012257	0.999522126241931	2	6	glycolipid biosynthetic process	BP	0.9999999999	BP glycolipid biosynthetic process	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1
+GO:0044434	0.0150802003265153	0.995215636967285	8	109	chloroplast part	CC	0.9999999999	CC chloroplast part	TRINITY_DN11283_c0_g1, TRINITY_DN15041_c0_g1, TRINITY_DN17183_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1, TRINITY_DN34897_c0_g1, TRINITY_DN35053_c0_g1, TRINITY_DN56922_c0_g1
+GO:0044435	0.0158647412241688	0.994918903835387	8	110	plastid part	CC	0.9999999999	CC plastid part	TRINITY_DN11283_c0_g1, TRINITY_DN15041_c0_g1, TRINITY_DN17183_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1, TRINITY_DN34897_c0_g1, TRINITY_DN35053_c0_g1, TRINITY_DN56922_c0_g1
+GO:0016491	0.0162930764950678	0.993336186186597	12	202	oxidoreductase activity	MF	0.9999999999	MF oxidoreductase activity	TRINITY_DN10109_c0_g1, TRINITY_DN25769_c0_g1, TRINITY_DN26385_c0_g1, TRINITY_DN27605_c0_g1, TRINITY_DN28300_c0_g1, TRINITY_DN28691_c0_g1, TRINITY_DN29047_c0_g1, TRINITY_DN30444_c0_g1, TRINITY_DN34740_c0_g1, TRINITY_DN5632_c0_g1, TRINITY_DN58028_c0_g1, TRINITY_DN6092_c0_g1
+GO:0010287	0.0165943909261154	0.999181860373503	2	7	plastoglobule	CC	0.9999999999	CC plastoglobule	TRINITY_DN35053_c0_g1, TRINITY_DN56922_c0_g1
+GO:1902652	0.0165961129765111	0.999181730365363	2	7	secondary alcohol metabolic process	BP	0.9999999999	BP secondary alcohol metabolic process	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0006633	0.0172211781667767	0.997020569433108	4	34	fatty acid biosynthetic process	BP	0.9999999999	BP fatty acid biosynthetic process	TRINITY_DN28691_c0_g1, TRINITY_DN29047_c0_g1, TRINITY_DN37434_c0_g1, TRINITY_DN50783_c0_g1
+GO:0016832	0.0216963677048252	0.998719658014294	2	8	aldehyde-lyase activity	MF	0.9999999999	MF aldehyde-lyase activity	TRINITY_DN31254_c0_g1, TRINITY_DN43176_c0_g1
+GO:0006636	0.021705264007869	0.998718851901669	2	8	unsaturated fatty acid biosynthetic process	BP	0.9999999999	BP unsaturated fatty acid biosynthetic process	TRINITY_DN28691_c0_g1, TRINITY_DN29047_c0_g1
+GO:0033559	0.0273673590222869	0.998120221360498	2	9	unsaturated fatty acid metabolic process	BP	0.9999999999	BP unsaturated fatty acid metabolic process	TRINITY_DN28691_c0_g1, TRINITY_DN29047_c0_g1
+GO:0016126	0.0273721211671487	0.998119717792746	2	9	sterol biosynthetic process	BP	0.9999999999	BP sterol biosynthetic process	TRINITY_DN35053_c0_g1, TRINITY_DN8498_c0_g1
+GO:0008252	0.0294838748094464	1	1	1	nucleotidase activity	MF	0.9999999999	MF nucleotidase activity	TRINITY_DN38745_c0_g1
+GO:0008253	0.0294838748094464	1	1	1	5'-nucleotidase activity	MF	0.9999999999	MF 5'-nucleotidase activity	TRINITY_DN38745_c0_g1
+GO:0009166	0.0294838748094464	1	1	1	nucleotide catabolic process	BP	0.9999999999	BP nucleotide catabolic process	TRINITY_DN38745_c0_g1
+GO:0009262	0.0294838748094464	1	1	1	deoxyribonucleotide metabolic process	BP	0.9999999999	BP deoxyribonucleotide metabolic process	TRINITY_DN38745_c0_g1
+GO:0009264	0.0294838748094464	1	1	1	deoxyribonucleotide catabolic process	BP	0.9999999999	BP deoxyribonucleotide catabolic process	TRINITY_DN38745_c0_g1
+GO:1901292	0.0294838748094464	1	1	1	nucleoside phosphate catabolic process	BP	0.9999999999	BP nucleoside phosphate catabolic process	TRINITY_DN38745_c0_g1
+GO:0033785	0.0295239984912111	1	1	1	heptose 7-phosphate kinase activity	MF	0.9999999999	MF heptose 7-phosphate kinase activity	TRINITY_DN38648_c0_g1
+GO:0033786	0.0295239984912111	1	1	1	heptose-1-phosphate adenylyltransferase activity	MF	0.9999999999	MF heptose-1-phosphate adenylyltransferase activity	TRINITY_DN38648_c0_g1
+GO:0097170	0.0295239984912111	1	1	1	ADP-L-glycero-beta-D-manno-heptose metabolic process	BP	0.9999999999	BP ADP-L-glycero-beta-D-manno-heptose metabolic process	TRINITY_DN38648_c0_g1
+GO:0097171	0.0295239984912111	1	1	1	ADP-L-glycero-beta-D-manno-heptose biosynthetic process	BP	0.9999999999	BP ADP-L-glycero-beta-D-manno-heptose biosynthetic process	TRINITY_DN38648_c0_g1
+GO:0048868	0.0295786539566249	1	1	1	pollen tube development	BP	0.9999999999	BP pollen tube development	TRINITY_DN37434_c0_g1
+GO:0003854	0.0295869386495404	1	1	1	3-beta-hydroxy-delta5-steroid dehydrogenase activity	MF	0.9999999999	MF 3-beta-hydroxy-delta5-steroid dehydrogenase activity	TRINITY_DN28300_c0_g1
+GO:0009706	0.0295928795609406	1	1	1	chloroplast inner membrane	CC	0.9999999999	CC chloroplast inner membrane	TRINITY_DN34897_c0_g1
+GO:0010007	0.0295928795609406	1	1	1	magnesium chelatase complex	CC	0.9999999999	CC magnesium chelatase complex	TRINITY_DN34897_c0_g1
+GO:0080177	0.0295943160535308	1	1	1	plastoglobule organization	BP	0.9999999999	BP plastoglobule organization	TRINITY_DN25515_c0_g1
+GO:1990641	0.0295943160535308	1	1	1	response to iron ion starvation	BP	0.9999999999	BP response to iron ion starvation	TRINITY_DN25515_c0_g1
+GO:0000170	0.0295943779175486	1	1	1	sphingosine hydroxylase activity	MF	0.9999999999	MF sphingosine hydroxylase activity	TRINITY_DN5632_c0_g1
+GO:0009924	0.0295943779175486	1	1	1	octadecanal decarbonylase activity	MF	0.9999999999	MF octadecanal decarbonylase activity	TRINITY_DN5632_c0_g1
+GO:0043446	0.0295943779175486	1	1	1	cellular alkane metabolic process	BP	0.9999999999	BP cellular alkane metabolic process	TRINITY_DN5632_c0_g1
+GO:0043447	0.0295943779175486	1	1	1	alkane biosynthetic process	BP	0.9999999999	BP alkane biosynthetic process	TRINITY_DN5632_c0_g1
+GO:0071771	0.0295943779175486	1	1	1	aldehyde decarbonylase activity	MF	0.9999999999	MF aldehyde decarbonylase activity	TRINITY_DN5632_c0_g1
+GO:1990465	0.0295943779175486	1	1	1	aldehyde oxygenase (deformylating) activity	MF	0.9999999999	MF aldehyde oxygenase (deformylating) activity	TRINITY_DN5632_c0_g1
+GO:0016767	0.0295946083786903	1	1	1	geranylgeranyl-diphosphate geranylgeranyltransferase activity	MF	0.9999999999	MF geranylgeranyl-diphosphate geranylgeranyltransferase activity	TRINITY_DN35053_c0_g1
+GO:0046905	0.0295946083786903	1	1	1	phytoene synthase activity	MF	0.9999999999	MF phytoene synthase activity	TRINITY_DN35053_c0_g1
+GO:0006307	0.029594812831537	1	1	1	DNA dealkylation involved in DNA repair	BP	0.9999999999	BP DNA dealkylation involved in DNA repair	TRINITY_DN6092_c0_g1
+GO:0035510	0.029594812831537	1	1	1	DNA dealkylation	BP	0.9999999999	BP DNA dealkylation	TRINITY_DN6092_c0_g1
+GO:0035511	0.029594812831537	1	1	1	oxidative DNA demethylation	BP	0.9999999999	BP oxidative DNA demethylation	TRINITY_DN6092_c0_g1
+GO:0035514	0.029594812831537	1	1	1	DNA demethylase activity	MF	0.9999999999	MF DNA demethylase activity	TRINITY_DN6092_c0_g1
+GO:0043734	0.029594812831537	1	1	1	DNA-N1-methyladenine dioxygenase activity	MF	0.9999999999	MF DNA-N1-methyladenine dioxygenase activity	TRINITY_DN6092_c0_g1
+GO:0051747	0.029594812831537	1	1	1	cytosine C-5 DNA demethylase activity	MF	0.9999999999	MF cytosine C-5 DNA demethylase activity	TRINITY_DN6092_c0_g1
+GO:0070989	0.029594812831537	1	1	1	oxidative demethylation	BP	0.9999999999	BP oxidative demethylation	TRINITY_DN6092_c0_g1
+GO:0080111	0.029594812831537	1	1	1	DNA demethylation	BP	0.9999999999	BP DNA demethylation	TRINITY_DN6092_c0_g1
+GO:0103053	0.029594812831537	1	1	1	1-ethyladenine demethylase activity	MF	0.9999999999	MF 1-ethyladenine demethylase activity	TRINITY_DN6092_c0_g1
+GO:0008675	0.0295958759450942	1	1	1	2-dehydro-3-deoxy-phosphogluconate aldolase activity	MF	0.9999999999	MF 2-dehydro-3-deoxy-phosphogluconate aldolase activity	TRINITY_DN43176_c0_g1
+GO:0008700	0.0295958759450942	1	1	1	4-hydroxy-2-oxoglutarate aldolase activity	MF	0.9999999999	MF 4-hydroxy-2-oxoglutarate aldolase activity	TRINITY_DN43176_c0_g1
+GO:0043725	0.0295958759450942	1	1	1	2-keto-3-deoxygluconate aldolase activity	MF	0.9999999999	MF 2-keto-3-deoxygluconate aldolase activity	TRINITY_DN43176_c0_g1
+GO:0007476	0.0295959319879481	1	1	1	imaginal disc-derived wing morphogenesis	BP	0.9999999999	BP imaginal disc-derived wing morphogenesis	TRINITY_DN27996_c0_g1
+GO:0035114	0.0295959319879481	1	1	1	imaginal disc-derived appendage morphogenesis	BP	0.9999999999	BP imaginal disc-derived appendage morphogenesis	TRINITY_DN27996_c0_g1
+GO:0035120	0.0295959319879481	1	1	1	post-embryonic appendage morphogenesis	BP	0.9999999999	BP post-embryonic appendage morphogenesis	TRINITY_DN27996_c0_g1
+GO:0048749	0.0295959319879481	1	1	1	compound eye development	BP	0.9999999999	BP compound eye development	TRINITY_DN27996_c0_g1
+GO:0006127	0.0295962115089807	1	1	1	glycerophosphate shuttle	BP	0.9999999999	BP glycerophosphate shuttle	TRINITY_DN30444_c0_g1
+GO:0045821	0.0295962115089807	1	1	1	positive regulation of glycolytic process	BP	0.9999999999	BP positive regulation of glycolytic process	TRINITY_DN30444_c0_g1
+GO:0051197	0.0295962115089807	1	1	1	positive regulation of coenzyme metabolic process	BP	0.9999999999	BP positive regulation of coenzyme metabolic process	TRINITY_DN30444_c0_g1
+GO:0019375	0.0295962988556231	1	1	1	galactolipid biosynthetic process	BP	0.9999999999	BP galactolipid biosynthetic process	TRINITY_DN11283_c0_g1
+GO:0005960	0.0295969627217724	1	1	1	glycine cleavage complex	CC	0.9999999999	CC glycine cleavage complex	TRINITY_DN38388_c0_g1
+GO:0005756	0.0295978430680576	1	1	1	mitochondrial proton-transporting ATP synthase, central stalk	CC	0.9999999999	CC mitochondrial proton-transporting ATP synthase, central stalk	TRINITY_DN19346_c0_g1
+GO:0045269	0.0295978430680576	1	1	1	proton-transporting ATP synthase, central stalk	CC	0.9999999999	CC proton-transporting ATP synthase, central stalk	TRINITY_DN19346_c0_g1
+GO:0009249	0.0295982804114151	1	1	1	protein lipoylation	BP	0.9999999999	BP protein lipoylation	TRINITY_DN24640_c0_g1
+GO:0016979	0.0295982804114151	1	1	1	lipoate-protein ligase activity	MF	0.9999999999	MF lipoate-protein ligase activity	TRINITY_DN24640_c0_g1
+GO:0016992	0.0295982804114151	1	1	1	lipoate synthase activity	MF	0.9999999999	MF lipoate synthase activity	TRINITY_DN24640_c0_g1
+GO:0070283	0.0295982804114151	1	1	1	NA	NA	0.9999999999	none	TRINITY_DN24640_c0_g1
+GO:0008194	0.033546491292315	0.99737350831053	2	10	UDP-glycosyltransferase activity	MF	0.9999999999	MF UDP-glycosyltransferase activity	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1
+GO:0016758	0.033546491292315	0.99737350831053	2	10	transferase activity, transferring hexosyl groups	MF	0.9999999999	MF transferase activity, transferring hexosyl groups	TRINITY_DN11283_c0_g1, TRINITY_DN20695_c0_g1
+GO:0016829	0.0402360870095298	0.988793457447191	5	64	lyase activity	MF	0.9999999999	MF lyase activity	TRINITY_DN28300_c0_g1, TRINITY_DN31254_c0_g1, TRINITY_DN43176_c0_g1, TRINITY_DN5632_c0_g1, TRINITY_DN7817_c0_g1
+GO:0009058	0.0444871090045095	0.97442881320204	21	480	biosynthetic process	BP	0.9999999999	BP biosynthetic process	TRINITY_DN11283_c0_g1, TRINITY_DN17183_c0_g1, TRINITY_DN19346_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1, TRINITY_DN28300_c0_g1, TRINITY_DN28691_c0_g1, TRINITY_DN29047_c0_g1, TRINITY_DN30444_c0_g1, TRINITY_DN31254_c0_g1, TRINITY_DN34897_c0_g1, TRINITY_DN35053_c0_g1, TRINITY_DN37434_c0_g1, TRINITY_DN38150_c0_g1, TRINITY_DN38648_c0_g1, TRINITY_DN48719_c0_g1, TRINITY_DN50783_c0_g1, TRINITY_DN55384_c0_g1, TRINITY_DN5632_c0_g1, TRINITY_DN7817_c0_g1, TRINITY_DN8498_c0_g1
+GO:0036003	0.047303832450127	0.995395821180267	2	12	positive regulation of transcription from RNA polymerase II promoter in response to stress	BP	0.9999999999	BP positive regulation of transcription from RNA polymerase II promoter in response to stress	TRINITY_DN36005_c0_g1, TRINITY_DN58306_c0_g1
+GO:0061408	0.047303832450127	0.995395821180267	2	12	positive regulation of transcription from RNA polymerase II promoter in response to heat stress	BP	0.9999999999	BP positive regulation of transcription from RNA polymerase II promoter in response to heat stress	TRINITY_DN36005_c0_g1, TRINITY_DN58306_c0_g1
+GO:0016830	0.0485913982920566	0.99127911393112	3	28	carbon-carbon lyase activity	MF	0.9999999999	MF carbon-carbon lyase activity	TRINITY_DN31254_c0_g1, TRINITY_DN43176_c0_g1, TRINITY_DN5632_c0_g1
+GO:0016616	0.0486313629185747	0.991269078612734	3	28	oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor	MF	0.9999999999	MF oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor	TRINITY_DN25769_c0_g1, TRINITY_DN28300_c0_g1, TRINITY_DN30444_c0_g1
+GO:0044710	0.0491631944281335	0.971060291836715	22	514	NA	NA	0.9999999999	none	TRINITY_DN11283_c0_g1, TRINITY_DN17183_c0_g1, TRINITY_DN19346_c0_g1, TRINITY_DN20695_c0_g1, TRINITY_DN25515_c0_g1, TRINITY_DN27605_c0_g1, TRINITY_DN28300_c0_g1, TRINITY_DN28691_c0_g1, TRINITY_DN29047_c0_g1, TRINITY_DN30444_c0_g1, TRINITY_DN31254_c0_g1, TRINITY_DN34897_c0_g1, TRINITY_DN35053_c0_g1, TRINITY_DN37434_c0_g1, TRINITY_DN38150_c0_g1, TRINITY_DN38388_c0_g1, TRINITY_DN38745_c0_g1, TRINITY_DN50783_c0_g1, TRINITY_DN5632_c0_g1, TRINITY_DN57643_c0_g1, TRINITY_DN6092_c0_g1, TRINITY_DN8498_c0_g1
