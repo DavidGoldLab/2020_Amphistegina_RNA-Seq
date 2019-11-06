@@ -1,0 +1,7 @@
+/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
+--matrix RSEM.Cfix.averagedTMM.EXPR.sorted.matrix \
+--heatmap --center_rows --log2
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
+--matrix RSEM.Photosynthesis.averagedTMM.EXPR.sorted.matrix \
+--heatmap --center_rows --log2
