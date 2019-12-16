@@ -19,6 +19,12 @@
 ../1_RSEM/H_High_2.isoforms.results \
 ../1_RSEM/I_High_3.isoforms.results
 
+# Create averaged matrix (for heat maps)
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/replicates_to_sample_averages_matrix.pl \
+--matrix RSEM.gene.TMM.EXPR.matrix \
+--samples_file samples_file.txt
+
 ###########################################
 # Running Differential Expression Analysis
 ###########################################

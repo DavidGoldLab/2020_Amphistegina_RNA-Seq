@@ -5,3 +5,33 @@
 /usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
 --matrix RSEM.Photosynthesis.averagedTMM.EXPR.sorted.matrix \
 --heatmap --center_rows --log2
+
+
+###
+
+Join -t $'\t' FA_Metabolism.1_List.txt ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix.avg_reps.matrix \
+> FA_Metabolism.2_TMM.txt
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
+--matrix FA_Metabolism.2_TMM.txt \
+--heatmap --center_rows --log2 \
+--output FA_Metabolism.3_Heatmap.txt
+
+
+Join -t $'\t' Photosynthesis.1_List.txt ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix.avg_reps.matrix \
+> Photosynthesis.2_TMM.txt
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
+--matrix Photosynthesis.2_TMM.txt \
+--heatmap --center_rows --log2 \
+--output Photosynthesis.3_Heatmap.txt
+
+# Glycolysis
+
+Join -t $'\t' Glycolysis.1_List.txt ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix.avg_reps.matrix \
+> Glycolysis.2_TMM.txt
+
+/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
+--matrix Glycolysis.2_TMM.txt \
+--heatmap --center_rows --log2 \
+--output Glycolysis.3_Heatmap.txt
