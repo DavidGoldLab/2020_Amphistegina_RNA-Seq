@@ -14,8 +14,10 @@ library( ggplot2 );
 # If you don't have the scales package installed, uncomment the following line:
 # install.packages( "scales" );
 library( scales );
-
-
+# --------------------------------------------------------------------------
+# If you don't have the ggrepel package installed, uncomment the following line:
+# install.packages( "ggrepel" );
+library( ggrepel );
 # --------------------------------------------------------------------------
 # Here is your data from REVIGO. Scroll down for plot configuration options.
 
@@ -63,7 +65,7 @@ p1 <- ggplot( data = one.data );
 p1 <- p1 + geom_point( aes( plot_X, plot_Y, colour = log10_p_value, size = log10_p_value), alpha = I(0.6) ) + scale_size_area();
 p1 <- p1 + scale_colour_gradientn( colours = c("blue", "green", "yellow", "red"), limits = c( min(one.data$log10_p_value), 0) );
 p1 <- p1 + geom_point( aes(plot_X, plot_Y, size = log10_p_value), shape = 21, fill = "transparent", colour = I (alpha ("black", 0.6) )) + scale_size_area();
-ex <- one.data [ one.data$log10_p_value < -24, ]; 
+ex <- one.data [ one.data$log10_p_value < -2, ]; 
 p1 <- p1 + geom_label_repel( data = ex, aes(plot_X, plot_Y, label = description), force = 1, size = 4);
 p1 <- p1 + labs (y = "semantic space x", x = "semantic space y");
 p1 <- p1 + theme(legend.key = element_blank()) ;

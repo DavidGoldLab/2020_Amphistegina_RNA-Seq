@@ -1,0 +1,70 @@
+#########################################
+# Get basis statistics on transcriptomes
+#########################################
+
+for i in *fasta
+do
+	/usr/local/Cellar/trinity/2.8.3_1/libexec/util/TrinityStats.pl $i
+	TransDecoder.LongOrfs -t $i
+	TransDecoder.Predict --no_refine_starts -t $i
+done
+
+
+######################################
+# Perform BUSCO completeness analysis
+######################################
+
+	# BUSCO run on Docker environment (https://www.docker.com/products/docker-desktop)
+
+docker run -u $(id -u) -v /Users/davidgold/git/2020_Amphistegina_RNA-Seq/0_Transcriptome_Analysis:/busco_wd ezlabgva/busco:v4.0.5_cv1 busco -i Foraminifera_Trinity.fasta \
+-m tran -o Foram-BUSCO -l eukaryota_odb10
+
+docker run -u $(id -u) -v /Users/davidgold/git/2020_Amphistegina_RNA-Seq/0_Transcriptome_Analysis:/busco_wd ezlabgva/busco:v4.0.5_cv1 busco -i Fragilariales_Trinity.fasta \
+-m tran -o Fragilariales-BUSCO -l eukaryota_odb10
+
+docker run -u $(id -u) -v /Users/davidgold/git/2020_Amphistegina_RNA-Seq/0_Transcriptome_Analysis:/busco_wd ezlabgva/busco:v4.0.5_cv1 busco -i Uri_Abdu_trinity.Trinity.fasta \
+-m tran -o Holobiont-BUSCO -l eukaryota_odb10
+
+# Results
+
+# Foram-BUSCO
+# 
+# 	--------------------------------------------------
+# 	|Results from dataset eukaryota_odb10             |
+# 	--------------------------------------------------
+# 	|C:12.6%[S:11.4%,D:1.2%],F:29.8%,M:57.6%,n:255    |
+# 	|32	Complete BUSCOs (C)                      	|
+# 	|29	Complete and single-copy BUSCOs (S)    		 |
+# 	|3	Complete and duplicated BUSCOs (D)       	 |
+# 	|76	Fragmented BUSCOs (F)                    	 |
+# 	|147	Missing BUSCOs (M)                       |
+# 	|255	Total BUSCO groups searched              |
+# 	--------------------------------------------------
+# 
+# Fragilariales-BUSCO
+# 
+# 	--------------------------------------------------
+# 	|Results from dataset eukaryota_odb10             |
+# 	--------------------------------------------------
+# 	|C:0.0%[S:0.0%,D:0.0%],F:7.8%,M:92.2%,n:255       |
+# 	|0	Complete BUSCOs (C)                       |
+# 	|0	Complete and single-copy BUSCOs (S)       |
+# 	|0	Complete and duplicated BUSCOs (D)        |
+# 	|20	Fragmented BUSCOs (F)                     |
+# 	|235	Missing BUSCOs (M)                        |
+# 	|255	Total BUSCO groups searched               |
+# 	--------------------------------------------------
+# 
+# Holobiont-BUSCO
+# 
+#	--------------------------------------------------
+#	|Results from dataset eukaryota_odb10             |
+#	--------------------------------------------------
+#	|C:43.5%[S:37.6%,D:5.9%],F:24.7%,M:31.8%,n:255    |
+#	|111	Complete BUSCOs (C)                       |
+#	|96	Complete and single-copy BUSCOs (S)       |
+#	|15	Complete and duplicated BUSCOs (D)        |
+#	|63	Fragmented BUSCOs (F)                     |
+#	|81	Missing BUSCOs (M)                        |
+#	|255	Total BUSCO groups searched               |
+#	--------------------------------------------------
