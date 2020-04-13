@@ -6,12 +6,12 @@ options(stringsAsFactors = FALSE)
 NO_REUSE = F
 
 # try to reuse earlier-loaded data if possible
-if (file.exists("FA_Metabolism.2_TMM.txt.RData") && ! NO_REUSE) {
+if (file.exists("Tubulin.PF00091.3_Heatmap.txt.RData") && ! NO_REUSE) {
     print('RESTORING DATA FROM EARLIER ANALYSIS')
-    load("FA_Metabolism.2_TMM.txt.RData")
+    load("Tubulin.PF00091.3_Heatmap.txt.RData")
 } else {
     print('Reading matrix file.')
-    primary_data = read.table("FA_Metabolism.2_TMM.txt", header=T, com='', row.names=1, check.names=F, sep='\t')
+    primary_data = read.table("Tubulin.PF00091.2_TMM.txt", header=T, com='', row.names=1, check.names=F, sep='\t')
     primary_data = as.matrix(primary_data)
 }
 source("/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/R/heatmap.3.R")
@@ -54,7 +54,7 @@ data = as.matrix(data) # convert to matrix
 # Centering rows
 data = t(scale(t(data), scale=F))
 
-write.table(data, file="FA_Metabolism.2_TMM.txt.log2.centered.dat", quote=F, sep='	');
+write.table(data, file="Tubulin.PF00091.3_Heatmap.txt.log2.centered.dat", quote=F, sep='	');
 if (nrow(data) < 2) { stop("
 
 **** Sorry, at least two rows are required for this matrix.
@@ -72,7 +72,7 @@ gene_dist = dist(data, method='euclidean')
 if (nrow(data) <= 1) { message('Too few genes to generate heatmap'); quit(status=0); }
 hc_genes = hclust(gene_dist, method='complete')
 heatmap_data = data
-pdf("FA_Metabolism.2_TMM.txt.log2.centered.genes_vs_samples_heatmap.pdf")
+pdf("Tubulin.PF00091.3_Heatmap.txt.log2.centered.genes_vs_samples_heatmap.pdf")
 heatmap.3(heatmap_data, dendrogram='both', Rowv=as.dendrogram(hc_genes), Colv=as.dendrogram(hc_samples), col=myheatcol, scale="none", density.info="none", trace="none", key=TRUE, keysize=1.2, cexCol=1, margins=c(10,10), cex.main=0.75, main=paste("samples vs. features
-", "FA_Metabolism.2_TMM.txt.log2.centered" ) )
+", "Tubulin.PF00091.3_Heatmap.txt.log2.centered" ) )
 dev.off()

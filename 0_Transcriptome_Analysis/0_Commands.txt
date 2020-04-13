@@ -25,6 +25,11 @@ docker run -u $(id -u) -v /Users/davidgold/git/2020_Amphistegina_RNA-Seq/0_Trans
 docker run -u $(id -u) -v /Users/davidgold/git/2020_Amphistegina_RNA-Seq/0_Transcriptome_Analysis:/busco_wd ezlabgva/busco:v4.0.5_cv1 busco -i Uri_Abdu_trinity.Trinity.fasta \
 -m tran -o Holobiont-BUSCO -l eukaryota_odb10
 
+	# Comparison to Reticulomyxa filosa proteome (https://www.ncbi.nlm.nih.gov/genome/11245)
+
+docker run -u $(id -u) -v /Users/davidgold/git/2020_Amphistegina_RNA-Seq/0_Transcriptome_Analysis:/busco_wd ezlabgva/busco:v4.0.5_cv1 busco -i GCA_000512085.1_Reti_assembly1.0_protein.faa \
+-m protein -o Holobiont-BUSCO -l eukaryota_odb10
+
 # Results
 
 # Foram-BUSCO
