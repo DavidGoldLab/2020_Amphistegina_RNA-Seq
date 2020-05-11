@@ -73,3 +73,12 @@ docker run -u $(id -u) -v /Users/davidgold/git/2020_Amphistegina_RNA-Seq/0_Trans
 #	|81	Missing BUSCOs (M)                        |
 #	|255	Total BUSCO groups searched               |
 #	--------------------------------------------------
+
+###############
+# PCR Vetting
+###############
+
+cd PCR_Vetting
+# PCR products included as "PCR_Queries.txt"
+makeblastdb -in ../Uri_Abdu_trinity.Trinity.fasta -dbtype nucl -out Uri_Abdu_trinity
+blastn -query PCR_Queries.txt -db Uri_Abdu_trinity -max_target_seqs 1 -out PCR_Queries_vs_Transcriptome_BLAST.txt

@@ -4574,6 +4574,17 @@ cd DESeq2.33627.dir
 --samples ../samples_file.txt \
 --examine_GO_enrichment --GO_annots ../go_annotations.txt --gene_lengths ../Trinity.gene_lengths.txt
 
+###############
+# Generate PCA
+###############
+
+cd DESeq2.33627.dir
+/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/PtR \
+--matrix ../RSEM.gene.counts.matrix \
+-s ../samples_file.txt --min_rowSums 10 --log2 \
+--CPM --center_rows \
+--prin_comp 3 
+
 ######################
 # GoSeq: All DE Genes
 ######################
