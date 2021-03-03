@@ -1,0 +1,14 @@
+# ID descriptions provided by Marleen Stuhr
+Filename	Description
+qExHF01_02718_H1_1.raw	Control_Rep_1
+qExHF01_02721_H1_3.raw	Control_Rep_2
+qExHF01_02726_H1_2.raw	Control_Rep_3
+qExHF01_02716_H2_2.raw	Single_Stress_Rep_1
+qExHF01_02725_H2_3.raw	Single_Stress_Rep_2
+qExHF01_02729_H2_1.raw	Single_Stress_Rep_3
+qExHF01_02719_H3_2.raw	Episodic_Stress_Rep_1
+qExHF01_02722_H3_1.raw	Episodic_Stress_Rep_2
+qExHF01_02728_H3_3.raw	Episodic_Stress_Rep_3
+qExHF01_02717_H4_3.raw	Chronic_Stress_Rep_1
+qExHF01_02724_H3_4.raw	Chronic_Stress_Rep_2
+qExHF01_02730_H4_2.raw	Chronic_Stress_Rep_3
