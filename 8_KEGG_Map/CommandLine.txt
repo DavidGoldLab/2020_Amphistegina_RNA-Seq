@@ -1,0 +1,7 @@
+join <(sort 0_Sym_Gene_List.txt) \
+<(sort ../7_Symbiont_Only_Analysis/Symbiont.Trinotate.report.txt) \
+> 1_Sym_Gene.Trinotate.Report.txt
+
+join <(sort 0_Holo_Gene_List.txt) \
+<(sort ../2_Trinotate/Trinotate.report.txt) \
+> 1_Holo_Gene.Trinotate.Report.txt

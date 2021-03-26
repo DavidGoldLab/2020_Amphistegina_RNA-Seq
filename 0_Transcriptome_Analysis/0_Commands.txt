@@ -74,11 +74,16 @@ docker run -u $(id -u) -v /Users/davidgold/git/2020_Amphistegina_RNA-Seq/0_Trans
 #	|255	Total BUSCO groups searched               |
 #	--------------------------------------------------
 
-###############
-# PCR Vetting
-###############
+#########################
+# Comparison of datasets
+#########################
 
-cd PCR_Vetting
-# PCR products included as "PCR_Queries.txt"
-makeblastdb -in ../Uri_Abdu_trinity.Trinity.fasta -dbtype nucl -out Uri_Abdu_trinity
-blastn -query PCR_Queries.txt -db Uri_Abdu_trinity -max_target_seqs 1 -out PCR_Queries_vs_Transcriptome_BLAST.txt
+makeblastdb -in Uri_Abdu_trinity.Trinity.fasta -dbtype nucl -out Holo
+
+blastn -task megablast -query Fragilariales_Trinity.fasta -db Holo \
+-max_target_seqs 1 -outfmt 6 -out BLAST-Fragilariales_vs_Holobiont.txt
+
+blastn -task megablast -query Foraminifera_Trinity.fasta -db Holo \
+-max_target_seqs 1 -outfmt 6 -out BLAST-Foraminifera_vs_Holobiont.txt
+
+rm Holo*

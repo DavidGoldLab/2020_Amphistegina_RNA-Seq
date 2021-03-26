@@ -1,76 +1,31 @@
-/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
---matrix RSEM.Cfix.averagedTMM.EXPR.sorted.matrix \
---heatmap --center_rows --log2
+##############################
+# Generate Heat Maps with PtR
+##############################
 
-/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
---matrix RSEM.Photosynthesis.averagedTMM.EXPR.sorted.matrix \
---heatmap --center_rows --log2
+# Photosynthesis (KEGG)
 
-
-###
-
-# Photosynthesis
-
-Join -t $'\t' Photosynthesis.1_List.txt ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix.avg_reps.matrix \
-> Photosynthesis.2_TMM.txt
-
-/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
---matrix Photosynthesis.2_TMM.txt \
+# Collect TMM data
+Join -t $'\t' <(sort Photosynthesis.ko00195.1_List.txt) <(sort ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix) \
+> Photosynthesis.ko00195.2_TMM.txt
+# Append header
+gsed -i "1 i\\\tA_Low_1\tB_Low_2\tC_Low_3\tD_Reg_1\tE_Reg_2\tF_Reg_3\tG_High_1\tH_High_2\tI_High_3" Photosynthesis.ko00195.2_TMM.txt
+# Generate heat map
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/ptr \
+--matrix Photosynthesis.ko00195.2_TMM.txt \
 --heatmap --center_rows --log2 \
---output Photosynthesis.3_Heatmap.txt
+--output Photosynthesis.ko00195.3_Heatmap.txt
 
-# Heat shock
-	# Extract putative actin genes based on presense of PFAM domain
+# Photosynthesis (GO)
 
-join -t $'\t' <(sort HeatShock.1_List.txt) <(sort ../2_Trinotate/Trinotate.long_gene_IDs.txt) >  temp0.txt
-join -t $'\t' <(sort temp0.txt) <(sort ../3_deSEQ2/DESeq2.33627.dir/diffExpr.P0.001_C2.matrix) > temp1.txt
-cut -f 1,2 temp1.txt > temp2.txt | join -t $'\t' temp2.txt ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix.avg_reps.matrix > temp3.txt
-gsed -E 's/^([^\t]*)\t/\1|/' temp3.txt > temp4.txt
-echo -e "Low\tReg\tHigh" | cat - temp4.txt > HeatShock.2_TMM.txt
-rm temp*
-
-/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
---matrix HeatShock.PF00022.2_TMM.txt \
+Join -t $'\t' Photosynthesis.go0015979.1_List.txt ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix \
+> Photosynthesis.go0015979.2_TMM.txt
+# Append header
+gsed -i "1 i\\\tA_Low_1\tB_Low_2\tC_Low_3\tD_Reg_1\tE_Reg_2\tF_Reg_3\tG_High_1\tH_High_2\tI_High_3" Photosynthesis.ko00195.2_TMM.txt
+# Generate heat map
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/ptr \
+--matrix Photosynthesis.go0015979.2_TMM.txt \
 --heatmap --center_rows --log2 \
---output HeatShock.3_Heatmap.txt
+--output Photosynthesis.go0015979.3_Heatmap.txt
 
-# Actin (PF00022.1)
-	# Extract putative actin genes based on presense of PFAM domain
 
-join -t $'\t' <(sort Actin.PF00022.1_List.txt) <(sort ../3_deSEQ2/DESeq2.33627.dir/diffExpr.P0.001_C2.matrix) > temp1.txt
-cut -f 1 temp1.txt > temp2.txt | join -t $'\t' temp2.txt ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix.avg_reps.matrix > temp3.txt
-echo -e "Low\tReg\tHigh" | cat - temp3.txt > Actin.PF00022.2_TMM.txt
-rm temp*
-
-/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
---matrix Actin.PF00022.2_TMM.txt \
---heatmap --center_rows --log2 \
---output Actin.PF00022.3_Heatmap.txt
-
-# Tubulin (PF00091.1)
-
-	# Extract putative tubulin genes based on presense of PFAM domain
-
-join -t $'\t' <(sort Tubulin.PF00091.1_List.txt) <(sort ../3_deSEQ2/DESeq2.33627.dir/diffExpr.P0.001_C2.matrix) > temp1.txt
-cut -f 1 temp1.txt > temp2.txt | join -t $'\t' temp2.txt ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix.avg_reps.matrix > temp3.txt
-echo -e "Low\tReg\tHigh" | cat - temp3.txt > Tubulin.PF00091.2_TMM.txt
-rm temp*
-
-/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
---matrix Tubulin.PF00091.2_TMM.txt \
---heatmap --center_rows --log2 \
---output Tubulin.PF00091.3_Heatmap.txt
-
-# Microtubule GO term
-
-join -t $'\t' <(sort Microtubule.1_List.txt) <(sort ../2_Trinotate/Trinotate.simple_gene_IDs.txt) >  temp0.txt
-join -t $'\t' <(sort temp0.txt) <(sort ../3_deSEQ2/DESeq2.33627.dir/diffExpr.P0.001_C2.matrix) > temp1.txt
-cut -f 1,2 temp1.txt > temp2.txt | join -t $'\t' temp2.txt ../3_deSEQ2/RSEM.gene.TMM.EXPR.matrix.avg_reps.matrix > temp3.txt
-gsed -E 's/^([^\t]*)\t/\1|/' temp3.txt > temp4.txt
-echo -e "Low\tReg\tHigh" | cat - temp4.txt > Microtubule.2_TMM.txt
-rm temp*
-
-/usr/local/Cellar/trinity/2.8.3_1/libexec/Analysis/DifferentialExpression/ptr \
---matrix Microtubule.2_TMM.txt \
---heatmap --center_rows --log2 \
---output Microtubule.3_Heatmap.txt
+A_Low A_Low_1 B_Low_2 C_Low_3 D_Reg_1 E_Reg_2 F_Reg_3 G_High_1 H_High_2 I_High_3

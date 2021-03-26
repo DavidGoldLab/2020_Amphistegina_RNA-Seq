@@ -1,3 +1,11 @@
+#######
+# RSEM
+#######
+
+# Make Bowtie2 library
+bowtie2-build Uri_Abdu_trinity.fasta Uri_Abdu_trinity
+rsem-prepare-reference Uri_Abdu_trinity.fasta Uri_Abdu_trinity
+
 # Sample_A
 rsem-calculate-expression --bowtie2 -p 8 --no-bam-output A_ATCACG_L001_R1_001.fastq.gz,A_ATCACG_L001_R1_002.fastq.gz Uri_Abdu_trinity A_Low_1
 

@@ -1,0 +1,9 @@
+Low	A_Sym_Low_1
+Low	B_Sym_Low_2
+Low	C_Sym_Low_3
+Reg	D_Sym_Reg_1
+Reg	E_Sym_Reg_2
+Reg	F_Sym_Reg_3
+High	G_Sym_High_1
+High	H_Sym_High_2
+High	I_Sym_High_3

@@ -1,0 +1,4 @@
+	High	Low	Reg
+High	0	139	90
+Low	139	0	198
+Reg	90	198	0

@@ -1,5 +1,0 @@
-Low	Reg	High
-TRINITY_DN31823_c0_g1|Luminal-binding_protein_8	12.856	1.268	3.255
-TRINITY_DN34099_c0_g1|Heat_shock_70_kDa_protein	45.201	0.375	0.577
-TRINITY_DN37866_c0_g1|Heat_shock_70_kDa_protein	71.769	3.095	7.903
-TRINITY_DN5834_c0_g1|Heat_shock_70_kDa_protein	0.000	3.722	6.469
